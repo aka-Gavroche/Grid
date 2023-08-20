@@ -1,0 +1,40 @@
+// Розміщення елеменітв за допомого ліній сітки
+.grid {
+    &__body {
+        grid-template: [row-1] 1fr [row-2] 2fr [last-row] / [column-1] 1fr [column-2] 2fr [column-3] 3fr [last-column];
+        grid-auto-flow: row dense;
+        gap: 10px;
+    }
+
+    &__item_1 {
+        background-color: #0f2655;
+        grid-area: block1;
+        grid-area: row-1 / column-1 / row-2 / last-column;
+    }
+    
+    &__item_2 {
+        background-color: #550f50;
+        grid-column: 2 / 3;
+    }
+    
+    &__item_3 {
+        background-color: #9fa32f;  
+    }
+    
+    &__item_4 {
+        background-color: #45550f;
+        grid-row: row-2 / last-row;
+    }
+    
+    &__item_5 {
+        grid-row: row-2 / last-row;
+        grid-column: column-3 / last-column;
+        background-color: #0f5550;
+    }
+    
+    &__item_6 {
+        background-color: #550f20;
+        grid-column: column-2 / last-column;
+    }
+}
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--Підключення стилів-->
+    <link rel="stylesheet" href="CSS\lesson-project_style.css">
+    <link rel="shortcut icon" href="IMG\favicon.ico" type="image/x-icon">
+    <title>Grid</title>
+</head>
+<body>
+    <!--Обгортка - загальний grid-контейнер-->
+    <div class="wrapper">
+        <!--Шапка - grid-елемент для wrapper'а-->
+        <header class="header">
+            <a href="#" class="header__logo">
+                <img class="header__icon" src="IMG\header-icon.png" alt="">
+            </a>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li>
+                        <a href="#" class="header__link">Фотогалерея</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Про нас</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Контакти</a>
+                    </li>
+                </ul>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+        <!--Головний блок - grid-елемент для wrapper'а і grid-контейнер-->
+        <main class="main">
+            <aside class="sidebar">
+                <nav class="sidebar__menu">
+                    <h3 class="sidebar__title">Категорії:</h3>
+                    <ul class="sidebar__list">
+                        <li>
+                            <a href="#" class="sidebar__link">Лісові походи</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar__link">Сталки</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar__link">Посиденьки біля багаття</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar__link">Одяг та спорядження</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar__link">Об'єкти</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar__link">Наші партнери</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="content">
+                <h1 class="content__title">Grid Layout - практика</h1>
+                <section class="content__gallery gallery">
+                    <h2 class="gallery__title">Галерея</h2>
+                    <div class="gallery__items">
+                        <div class="gallery__item gallery__item_big">
+                            <img src="IMG\Gallery\1.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="IMG\Gallery\2.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="IMG\Gallery\3.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="IMG\Gallery\4.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="IMG\Gallery\5.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="IMG\Gallery\6.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="IMG\Gallery\7.jpg" alt="">
+                        </div>
+                        <div class="gallery__item gallery__item_big">
+                            <img src="IMG\Gallery\8.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="IMG\Gallery\9.jpg" alt="">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="IMG\Gallery\10.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="content__products products">
+                    <h2 class="products__title">Продукція</h2>
+                    <div class="products__items">
+                        <div class="products__item">
+                            <a href="#" class="products__image">
+                                <img src="IMG/Products/waistcoat.webp" alt="">
+                            </a>
+                            <a href="#" class="products__name">Жилетка утеплена, з капюшоном "ANTITERROR II" Olive</a>
+                            <a href="#" class="products__button">Купити</a>
+                        </div>
+                        <div class="products__item">
+                            <a href="#" class="products__image">
+                                <img src="IMG/Products/Ubacs.webp" alt="">
+                            </a>
+                            <a href="#" class="products__name">
+                                Футболка UBACS тактична "ANTITERROR II" Black</a>
+                            <a href="#" class="products__button">Купити</a>
+                        </div>
+                        <div class="products__item">
+                            <a href="#" class="products__image">
+                                <img src="IMG/Products/Ubacs-olive.webp" alt="">
+                            </a>
+                            <a href="#" class="products__name">
+                                Сорочка бойова UBACS "ANTITERROR II" Olive</a>
+                            <a href="#" class="products__button">Купити</a>
+                        </div>
+                        <div class="products__item">
+                            <a href="#" class="products__image">
+                                <img src="IMG/Products/Raptor-black.webp" alt="">
+                            </a>
+                            <a href="#" class="products__name">
+                                Куртка бушлат зимова "RAPTOR-3"</a>
+                            <a href="#" class="products__button">Купити</a>
+                        </div>
+                        <div class="products__item">
+                            <a href="#" class="products__image">
+                                <img src="IMG/Products/product.webp" alt="">
+                            </a>
+                            <a href="#" class="products__name">Футболка "Black Water"</a>
+                            <a href="#" class="products__button">Купити</a>
+                        </div>
+                        <div class="products__item">
+                            <a href="#" class="products__image">
+                                <img src="IMG/Products/Defence-black.webp" alt="">
+                            </a>
+                            <a href="#" class="products__name">
+                                Вітровка "TRAVEL DEFENCE" Black</a>
+                            <a href="#" class="products__button">Купити</a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <!--Підвал - grid-елемент для wrapper'а-->
+        <footer class="footer">
+            <div class="footer__copy">
+                Copyright, 2023
+            </div>
+             <div class="footer__text">
+                All rights reserved
+             </div>
+        </footer>
+    </div>
+</body>
+</html>
